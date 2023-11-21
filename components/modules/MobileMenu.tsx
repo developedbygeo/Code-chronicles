@@ -14,18 +14,16 @@ import navLinks from '@/data/navigation.json';
 import AuthenticatedLinks from '@/modules/AuthenticatedLinks';
 import ThemeToggle from '@/modules/ThemeToggle';
 
+import { Button } from '@/ui/Button';
+
 const MobileMenu = ({ className }: WithClassName) => {
     const [open, toggleOpen] = useReducer((state) => !state, false);
 
     return (
         <>
-            <div className={cn('flex items-center lg:hidden', className)} onClick={toggleOpen}>
-                {open ? (
-                    <MdMenuOpen className="h-10 w-10 text-gray-200" />
-                ) : (
-                    <MdMenu className=" text-text-gray-600 h-10 w-10" />
-                )}
-            </div>
+            <Button variant="ghost" className={cn('flex items-center px-0 lg:hidden', className)} onClick={toggleOpen}>
+                <MdMenu className=" text-text-gray-600 h-10 w-10" />
+            </Button>
             <Sheet open={open} onOpenChange={toggleOpen}>
                 <SheetContent className="h-[101vh] bg-gray-100 text-center dark:bg-dark" side="top">
                     {' '}
