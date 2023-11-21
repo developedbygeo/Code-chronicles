@@ -27,7 +27,7 @@ const Featured = ({ className }: WithClassName) => (
                     reiciendis possimus, officiis vitae aliquam. Cumque ullam recusandae fugiat repellendus similique
                     aut eius nulla, doloribus dignissimos odit rerum nemo ab non.
                 </p>
-                <Button asChild variant="default" size="lg" className="w-fit">
+                <Button asChild variant="default" size="lg" className="w-full xl:w-fit">
                     <Link href="/">Read More</Link>
                 </Button>
             </div>
