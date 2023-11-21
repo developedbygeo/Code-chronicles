@@ -27,7 +27,7 @@ const MobileMenu = ({ className }: WithClassName) => {
                 )}
             </div>
             <Sheet open={open} onOpenChange={toggleOpen}>
-                <SheetContent className="h-[101vh] bg-gray-100 text-center text-center dark:bg-dark" side="top">
+                <SheetContent className="h-[101vh] bg-gray-100 text-center dark:bg-dark" side="top">
                     {' '}
                     <Logo className="h-auto w-56 fill-black transition-colors dark:fill-gray-200 lg:w-72" />
                     <nav className="h-11/12 flex w-11/12 flex-col items-center justify-center gap-10">
