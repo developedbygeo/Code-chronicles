@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .hero-title {
+        @apply text-4xl font-bold !leading-relaxed tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl;
+    }
+}
+
+@layer utilities {
+    .c-scrollbar {
+        @apply scrollbar-thin scrollbar-track-transparent scrollbar-thumb-gray-700;
+    }
+
+    .apply-pb {
+        @apply pb-14 xl:pb-28;
+    }
+
+    .apply-pt {
+        @apply pt-14 xl:pt-28;
+    }
+
+    .apply-py {
+        @apply py-14 xl:py-28;
+    }
+
+    .text-theme {
+        @apply text-gray-600 dark:text-gray-400;
+    }
+
+    .navlink {
+        @apply relative font-normal tracking-normal text-gray-600 transition-colors duration-200 before:absolute before:-bottom-2 before:right-0 before:h-[0.1rem] before:w-0 before:rounded-sm before:bg-gray-500 hover:text-black hover:before:left-0 hover:before:w-full dark:text-gray-400 dark:before:bg-white dark:hover:text-white;
+    }
+
+    .navlink::before {
+        transition:
+            right 0.4s,
+            width 0.4s,
+            left 0.4s;
+    }
+}
