@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Homepage",
+        "url": "/",
+        "key": "home"
+    },
+    {
+        "name": "About",
+        "url": "/about",
+        "key": "about"
+    }
+]
