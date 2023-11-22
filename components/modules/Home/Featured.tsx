@@ -4,13 +4,22 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { WithClassName } from '@/types/UI';
 
+import UnderlineGraphic from '@/assets/underline-1.svg';
+
 import { Button } from '@/ui/Button';
 
 const Featured = ({ className }: WithClassName) => (
     <section className={cn('', className)}>
         <h2 className="hero-title">
-            Hello, I am George! 👋 <br />
-            Find out more about the frontend and creative ideas!
+            <div className="mb-3">
+                Hello, I am{' '}
+                <div className="relative inline overflow-visible">
+                    <span className="animated-gradient-text relative z-20 fill-gray-100 dark:fill-dark">George </span>
+                    <UnderlineGraphic className="animated-gradient-text absolute -bottom-6 left-0 h-12 w-full" />
+                </div>
+                ! 👋
+            </div>
+            Find out more about frontend development, creative ideas and everything in between!
         </h2>
 
         <div className="mt-14 flex flex-col items-center gap-12 lg:flex-row">
@@ -27,7 +36,7 @@ const Featured = ({ className }: WithClassName) => (
                     reiciendis possimus, officiis vitae aliquam. Cumque ullam recusandae fugiat repellendus similique
                     aut eius nulla, doloribus dignissimos odit rerum nemo ab non.
                 </p>
-                <Button asChild variant="default" size="lg" className="w-full xl:w-fit">
+                <Button asChild variant="default" size="lg" className="w-full md:w-fit md:self-center xl:self-start">
                     <Link href="/">Read More</Link>
                 </Button>
             </div>
