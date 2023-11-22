@@ -40,6 +40,10 @@ module.exports = {
                 anton: ['var(--font-anton)', ...defaultTheme.fontFamily.sans],
             },
             keyframes: {
+                'moving-gradient': {
+                    '0%': { backgroundPosition: '0% 50%' },
+                    '100%': { backgroundPosition: '100% 50%' },
+                },
                 spinning: {
                     from: { transform: 'rotate(0deg)' },
                     to: { transform: 'rotate(360deg)' },
@@ -68,6 +72,7 @@ module.exports = {
                 'bubble-mid': 'bubble-bounce 12s ease-in-out infinite alternate',
                 'bubble-slow': 'bubble-bounce 22s linear infinite',
                 spinning: 'spinning 4s linear infinite',
+                'moving-gradient': 'moving-gradient 12s ease infinite alternate',
             },
         },
     },
