@@ -30,7 +30,7 @@ const Featured = ({ className }: WithClassName) => (
                 <h3 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, sunt.
                 </h3>
-                <p className="text-sm text-gray-600 dark:text-gray-400">
+                <p className="themed-text text-sm">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor hic, maiores sunt harum ipsa debitis
                     fugiat ratione porro quae ab minima, dolorem nemo cupiditate consectetur mollitia odit quis ipsam
                     reiciendis possimus, officiis vitae aliquam. Cumque ullam recusandae fugiat repellendus similique
