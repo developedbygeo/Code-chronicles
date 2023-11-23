@@ -10,7 +10,7 @@ const BlogCategories = ({ className }: WithClassName) => (
     <section className={className}>
         <h2 className="section-title">Popular Categories</h2>
         <ul className="flex w-full flex-wrap justify-evenly gap-4 xl:flex-nowrap">
-            {blogCategories.map((category) => (
+            {blogCategories.map((category, index) => (
                 <HoverCard key={category.id}>
                     <HoverCardTrigger asChild>
                         <div
