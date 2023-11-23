@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer components {
+    /* text */
     .hero-title {
         @apply text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-5xl md:text-6xl;
     }
@@ -15,6 +16,41 @@
         @apply animate-moving-gradient bg-gradient-to-r from-blue-600 via-yellow-700 to-purple-600 bg-clip-text text-transparent;
 
         background-size: 400% 400%;
+    }
+
+    .gradient-text {
+        @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+    }
+
+    .themed-text {
+        @apply text-gray-600 dark:text-gray-300;
+    }
+
+    .themed-minor-text {
+        @apply text-gray-900 dark:text-gray-400;
+    }
+
+    /* links */
+    .navlink {
+        @apply relative font-normal tracking-normal text-gray-600 transition-colors duration-200 before:absolute before:-bottom-2 before:right-0 before:h-[0.1rem] before:w-0 before:rounded-sm before:bg-gray-500 hover:text-black hover:before:left-0 hover:before:w-full dark:text-gray-400 dark:before:bg-white dark:hover:text-white;
+    }
+
+    .navlink::before {
+        transition:
+            right 0.4s,
+            width 0.4s,
+            left 0.4s;
+    }
+
+    .see-more {
+        @apply relative bg-transparent font-bold transition-colors duration-200 before:absolute before:-bottom-2 before:right-0 before:h-[0.1rem] before:w-0 before:rounded-sm before:bg-gradient-to-l before:from-blue-600  before:to-purple-600 hover:bg-gradient-to-l hover:from-blue-600 hover:to-purple-600 hover:bg-clip-text hover:text-transparent hover:before:left-0 hover:before:w-full dark:text-gray-400;
+    }
+
+    .see-more::before {
+        transition:
+            right 0.4s,
+            width 0.4s,
+            left 0.4s;
     }
 }
 
@@ -33,20 +69,5 @@
 
     .apply-py {
         @apply py-14 xl:py-28;
-    }
-
-    .text-theme {
-        @apply text-gray-600 dark:text-gray-400;
-    }
-
-    .navlink {
-        @apply relative font-normal tracking-normal text-gray-600 transition-colors duration-200 before:absolute before:-bottom-2 before:right-0 before:h-[0.1rem] before:w-0 before:rounded-sm before:bg-gray-500 hover:text-black hover:before:left-0 hover:before:w-full dark:text-gray-400 dark:before:bg-white dark:hover:text-white;
-    }
-
-    .navlink::before {
-        transition:
-            right 0.4s,
-            width 0.4s,
-            left 0.4s;
     }
 }
