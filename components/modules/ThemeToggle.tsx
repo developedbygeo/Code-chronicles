@@ -13,10 +13,6 @@ const ThemeToggle = ({ className }: WithClassName) => {
     const { theme, setTheme } = useTheme();
 
     useEffect(() => {
-        console.log(theme);
-    }, [theme]);
-
-    useEffect(() => {
         setMounted(true);
     }, []);
 
