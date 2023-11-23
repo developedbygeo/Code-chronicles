@@ -1,0 +1,32 @@
+[
+    {
+        "id": "blog-post-1",
+        "image": "/test-blog-post-image.jpg",
+        "date": "22.11.2023",
+        "category": "culture",
+        "title": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+        "subtitle": "Deploy your new project in one-click.",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis minus incidunt porro placeat id ut culpa. Architecto quas ducimus temporibus autem laudantium omnis corrupti deserunt magnam sed? Incidunt, rerum eaque, id pariatur commodi aperiam hic necessitatibus officiis aut ducimus nihil quam nisi numquam maiores veritatis? Aspernatur reprehenderit placeat consectetur maiores.",
+        "slug": "blog-post-1"
+    },
+    {
+        "id": "blog-post-2",
+        "image": "/test-blog-post-image.jpg",
+        "date": "22.11.2023",
+        "category": "culture",
+        "title": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+        "subtitle": "Deploy your new project in one-click.",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis minus incidunt porro placeat id ut culpa. Architecto quas ducimus temporibus autem laudantium omnis corrupti deserunt magnam sed? Incidunt, rerum eaque, id pariatur commodi aperiam hic necessitatibus officiis aut ducimus nihil quam nisi numquam maiores veritatis? Aspernatur reprehenderit placeat consectetur maiores.",
+        "slug": "blog-post-2"
+    },
+    {
+        "id": "blog-post-3",
+        "image": "/test-blog-post-image.jpg",
+        "date": "22.11.2023",
+        "category": "culture",
+        "title": "Lorem ipsum dolor, sit amet consectetur adipisicing elit.",
+        "subtitle": "Deploy your new project in one-click.",
+        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis minus incidunt porro placeat id ut culpa. Architecto quas ducimus temporibus autem laudantium omnis corrupti deserunt magnam sed? Incidunt, rerum eaque, id pariatur commodi aperiam hic necessitatibus officiis aut ducimus nihil quam nisi numquam maiores veritatis? Aspernatur reprehenderit placeat consectetur maiores.",
+        "slug": "blog-post-3"
+    }
+]
