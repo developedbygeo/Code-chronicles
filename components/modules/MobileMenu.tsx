@@ -28,12 +28,12 @@ const MobileMenu = ({ className }: WithClassName) => {
                 <SheetContent className="h-[101vh] bg-gray-100 text-center dark:bg-dark" side="top">
                     {' '}
                     <Logo className="h-auto w-56 fill-black transition-colors dark:fill-gray-200 lg:w-72" />
-                    <nav className="h-11/12 flex w-11/12 flex-col items-center justify-center gap-10">
+                    <nav className="flex h-11/12 w-11/12 flex-col items-center justify-center gap-10">
                         <ul className="flex flex-col items-center justify-center gap-12 text-base">
                             {navLinks.map((link) => (
                                 <li key={link.key}>
                                     <SheetTrigger>
-                                        <NavLink className="navlink text-theme" href={link.url}>
+                                        <NavLink className="navlink themed-text" href={link.url}>
                                             {link.name}
                                         </NavLink>
                                     </SheetTrigger>
