@@ -1,0 +1,62 @@
+[
+    {
+        "image": "/test-blog-post-image.jpg",
+        "title": "Introduction to JavaScript",
+        "category": "JavaScript",
+        "date": "2022-01-01",
+        "subtitle": "Learn the basics of JavaScript programming language",
+        "description": "JavaScript is a popular programming language used for web development. In this article, we will cover the fundamentals of JavaScript and how to get started with it.",
+        "slug": "introduction-to-javascript",
+        "author": "John Doe"
+    },
+    {
+        "image": "/test-blog-post-image.jpg",
+        "title": "Getting Started with TypeScript",
+        "category": "TypeScript",
+        "date": "2022-01-02",
+        "subtitle": "Learn how to use TypeScript in your projects",
+        "description": "TypeScript is a superset of JavaScript that adds static typing to the language. In this article, we will explore the benefits of TypeScript and how to integrate it into your development workflow.",
+        "slug": "getting-started-with-typescript",
+        "author": "Jane Smith"
+    },
+    {
+        "image": "/test-blog-post-image.jpg",
+        "title": "Building a Next.js Application",
+        "category": "NextJS",
+        "date": "2022-01-03",
+        "subtitle": "Create fast and scalable web applications with Next.js",
+        "description": "Next.js is a popular framework for building server-side rendered React applications. In this article, we will walk through the process of setting up a Next.js project and building a simple application.",
+        "slug": "building-a-nextjs-application",
+        "author": "Mike Johnson"
+    },
+    {
+        "image": "/test-blog-post-image.jpg",
+        "title": "React Hooks: A Deep Dive",
+        "category": "React",
+        "date": "2022-01-04",
+        "subtitle": "Explore the power of React Hooks",
+        "description": "React Hooks are a new feature introduced in React 16.8 that allows you to use state and other React features without writing a class. In this article, we will dive deep into React Hooks and see how they can simplify your React components.",
+        "slug": "react-hooks-a-deep-dive",
+        "author": "Sarah Thompson"
+    },
+    {
+        "image": "/test-blog-post-image.jpg",
+        "title": "The Art of Cooking",
+        "category": "Food",
+        "date": "2022-01-05",
+        "subtitle": "Discover the joy of cooking",
+        "description": "Cooking is not just about preparing food, it is an art form that allows you to express your creativity and passion. In this article, we will explore different cooking techniques and share some delicious recipes.",
+        "slug": "the-art-of-cooking",
+        "author": "Michael Brown"
+    },
+    {
+        "image": "/test-blog-post-image.jpg",
+        "title": "Exploring the World: Travel Guide",
+        "category": "Travel",
+        "date": "2022-01-06",
+        "subtitle": "Embark on a journey to new destinations",
+        "description": "Traveling is a wonderful way to broaden your horizons and experience different cultures. In this article, we will take you on a virtual tour of some of the most beautiful places in the world and provide useful travel tips.",
+        "slug": "exploring-the-world-travel-guide",
+        "author": "Emily Wilson"
+    }
+]
