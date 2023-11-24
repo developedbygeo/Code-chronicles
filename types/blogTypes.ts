@@ -9,6 +9,7 @@ export type BlogPreview = {
     subtitle: string;
     description: string;
     slug: string;
+    author: string;
 };
 
 export type PopularEntryPreview = {
