@@ -2,14 +2,20 @@ import { WithClassName } from '@/types/UI';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import { cn } from '@/lib/utils';
+
 import blogCategories from '@/data/blogCategories';
 
 import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/ui/HoverCard';
 
-const BlogCategories = ({ className }: WithClassName) => (
+type BlogCategoriesProps = WithClassName & {
+    listClassName?: string;
+};
+
+const BlogCategories = ({ className, listClassName }: BlogCategoriesProps) => (
     <section className={className}>
         <h2 className="section-title">Popular Categories</h2>
-        <ul className="flex w-full flex-wrap justify-evenly gap-4 xl:flex-nowrap">
+        <ul className={cn('flex w-full flex-wrap justify-evenly gap-4 xl:flex-nowrap', listClassName)}>
             {blogCategories.map((category, index) => (
                 <HoverCard key={category.id}>
                     <HoverCardTrigger asChild>
