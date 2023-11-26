@@ -7,10 +7,11 @@ import { WithClassName } from '@/types/UI';
 import UnderlineGraphic from '@/assets/underline-1.svg';
 
 import { Button } from '@/ui/Button';
+import HeroTitle from '@/modules/UI/HeroTitle';
 
 const Featured = ({ className }: WithClassName) => (
     <section className={cn('', className)}>
-        <h2 className="hero-title">
+        <HeroTitle>
             <div className="mb-3">
                 Hello, I am{' '}
                 <div className="relative inline overflow-visible">
@@ -20,7 +21,7 @@ const Featured = ({ className }: WithClassName) => (
                 ! 👋
             </div>
             Find out more about frontend development, creative ideas and everything in between!
-        </h2>
+        </HeroTitle>
 
         <div className="mt-14 flex flex-col items-center gap-12 lg:flex-row">
             <div className="relative h-[25rem] w-full xl:h-[25rem] xl:max-w-[40rem] xl:flex-1">

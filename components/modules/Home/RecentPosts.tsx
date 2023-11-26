@@ -3,7 +3,7 @@ import { WithClassName } from '@/types/UI';
 
 import { BlogPreview } from '@/types/blogTypes';
 
-import BlogPostPreview from '@/modules/Blog/BlogPostPreview';
+import BlogPostPreview from '@/modules/Posts/BlogPostPreview';
 import RecentPostsPagination from '@/modules/Home/RecentPostsPagination';
 
 import mockData from '@/data/recent-posts.json';

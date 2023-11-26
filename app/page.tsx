@@ -2,7 +2,7 @@ import Featured from '@/modules/Home/Featured';
 import BlogCategories from '@/modules/Home/BlogCategories';
 import RecentPosts from '@/modules/Home/RecentPosts';
 import MostPopular from '@/modules/Home/MostPopular';
-import SimpleBlogCategories from '@/modules/Blog/SimpleBlogCategories';
+import SimpleBlogCategories from '@/modules/Posts/SimpleBlogCategories';
 import EditorPicks from '@/modules/Home/EditorPicks';
 
 const Home = () => {
