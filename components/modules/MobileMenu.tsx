@@ -5,6 +5,7 @@ import { MdMenu, MdMenuOpen } from 'react-icons/md';
 
 import { cn } from '@/lib/utils';
 import Logo from '@/assets/default-monochrome.svg';
+import socialMedia from '@/data/socialMedia';
 
 import { WithClassName } from '@/types/UI';
 import { Sheet, SheetContent, SheetTrigger } from '@/ui/Sheet';
@@ -40,6 +41,19 @@ const MobileMenu = ({ className }: WithClassName) => {
                                 </li>
                             ))}
                             <AuthenticatedLinks />
+                        </ul>
+
+                        <ul className="mt-20 flex w-full justify-center space-x-6">
+                            {socialMedia.map((item) => {
+                                const Icon = item.icon;
+
+                                return (
+                                    <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+                                        <span className="sr-only">{item.name}</span>
+                                        <Icon className="h-6 w-6 transition-colors hover:text-dark dark:text-gray-400 dark:hover:text-gray-100" />
+                                    </a>
+                                );
+                            })}
                         </ul>
                     </nav>
                     <div className="flex w-full justify-center">
