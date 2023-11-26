@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { WithClassName } from '@/types/UI';
 
 import AuthenticatedLinks from '@/modules/AuthenticatedLinks';
@@ -12,7 +13,9 @@ import MobileMenu from '@/modules/MobileMenu';
 
 const Navbar = ({ className }: WithClassName) => (
     <div className="flex justify-between py-8 xl:px-4">
-        <Logo className="h-auto w-56 fill-black transition-colors dark:fill-gray-200 lg:w-72" />
+        <Link href="/">
+            <Logo className="h-auto w-56 fill-black transition-colors dark:fill-gray-200 lg:w-72" />
+        </Link>
         <nav className="hidden items-center xl:flex">
             <ThemeToggle className="mr-12" />
 
