@@ -30,6 +30,11 @@ const Footer = ({ className }: WithClassName) => {
                             );
                         })}
                     </ul>
+                    <div className="mt-4 pt-8">
+                        <p className="themed-minor-text text-xs font-light">
+                            &copy; {new Date().getFullYear()} developedbygeo. All rights reserved.
+                        </p>
+                    </div>
                 </div>
                 <div className="flex flex-1 flex-col space-y-8">
                     <h3 className="themed-minor-text text-sm font-semibold">Categories</h3>
@@ -41,11 +46,6 @@ const Footer = ({ className }: WithClassName) => {
                         ))}
                     </ul>
                 </div>
-            </div>
-            <div className="mt-4 border-t border-gray-900/10 pt-8">
-                <p className="themed-minor-text text-center text-xs">
-                    &copy; {new Date().getFullYear()} developedbygeo. All rights reserved.
-                </p>
             </div>
         </footer>
     );
