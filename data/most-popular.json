@@ -22,37 +22,5 @@
         "date": "25.11.2023",
         "category": "React",
         "slug": "popular-post-3"
-    },
-    {
-        "id": "popular-post-4",
-        "title": "Popular Post 4",
-        "author": "John Doe",
-        "date": "25.11.2023",
-        "category": "Food",
-        "slug": "popular-post-4"
-    },
-    {
-        "id": "popular-post-5",
-        "title": "Popular Post 5",
-        "author": "John Doe",
-        "date": "25.11.2023",
-        "category": "Travel",
-        "slug": "popular-post-5"
-    },
-    {
-        "id": "popular-post-6",
-        "title": "Popular Post 6",
-        "author": "John Doe",
-        "date": "25.11.2023",
-        "category": "TypeScript",
-        "slug": "popular-post-6"
-    },
-    {
-        "id": "popular-post-7",
-        "title": "Popular Post 7",
-        "author": "John Doe",
-        "date": "25.11.2023",
-        "category": "Music",
-        "slug": "popular-post-7"
     }
 ]
