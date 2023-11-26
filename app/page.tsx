@@ -15,7 +15,7 @@ const Home = () => {
                 <aside className="flex flex-col gap-12 xl:col-span-2 xl:col-start-11">
                     <MostPopular />
                     <SimpleBlogCategories listClassName="grid grid-cols-2 gap-6" />
-                    <EditorPicks className="mt-6" />
+                    <EditorPicks className="apply-pb mt-6" />
                 </aside>
             </div>
         </section>
