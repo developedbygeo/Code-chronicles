@@ -14,7 +14,7 @@ type PopularEntryProps = WithClassName & {
 
 const HotEntry = ({ className, entry }: PopularEntryProps) => (
     <article className={cn('mb-12', className)}>
-        <div className="group mb-2 flex flex-col-reverse gap-2">
+        <div className="group mb-2 flex gap-8 xl:flex-col-reverse xl:gap-2">
             <Link className="peer" href={`/blog/${entry.category}/${entry.slug}`}>
                 <h3 className="themed-entry-subtitle">{entry.title}</h3>
             </Link>
