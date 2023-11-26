@@ -10,9 +10,15 @@ const EditorPicks = ({ className }: WithClassName) => (
         <p className="text-sm text-gray-500 dark:text-gray-400">Handpicked by us</p>
 
         <h2 className="section-title">Editor&apos;s picks</h2>
-        {mockData.map((post) => (
-            <SmallBlogPostPreview key={post.slug} className="mb-8" entry={post as BlogPreview} />
-        ))}
+        <div className="fle flex-row flex-wrap">
+            {mockData.map((post) => (
+                <SmallBlogPostPreview
+                    key={post.slug}
+                    className="mb-12 basis-full md:basis-1/3 xl:mb-8"
+                    entry={post as BlogPreview}
+                />
+            ))}
+        </div>
     </section>
 );
 
