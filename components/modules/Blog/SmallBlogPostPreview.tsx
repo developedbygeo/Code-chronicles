@@ -18,10 +18,41 @@ const SmallBlogPostPreview = ({ className, entry }: SmallBlogPostPreviewProps) =
 
     return (
         <Link className="group" href={`/blog/${lowercaseCategory}/${entry.slug}`}>
-            <article className={cn('grid grid-cols-[1fr_3fr] content-center gap-4', className)}>
+            <article className={cn('flex content-center items-start gap-4', className)}>
+                <div className="relative h-12 w-12 flex-1">
+                    <AspectRatio className="flex items-center" ratio={4 / 4}>
+                        <Image className="rounded-full" src={entry.image} alt={entry.title} fill />
+                    </AspectRatio>
+                </div>
+
+                <div className="flex-3 max-w-[12rem]">
+                    <div>
+                        <CategoryBadge
+                            className="mb-2
+                        w-fit group-hover:scale-100 group-hover:shadow-lg"
+                            variant={entry.category}
+                        >
+                            {entry.category}
+                        </CategoryBadge>
+
+                        <h3
+                            className="themed-entry-subtitle multi-line-ellipsis !text-sm group-hover:text-gray-800 dark:text-gray-300 dark:group-hover:text-gray-100"
+                            title={entry.title}
+                        >
+                            {entry.title}
+                        </h3>
+                    </div>
+
+                    <p className="themed-text mt-1 whitespace-nowrap text-xs font-normal">
+                        {entry.author} <span className="themed-minor-text ml-2 font-light">{entry.date}</span>
+                    </p>
+                </div>
+            </article>
+
+            {/* <article className={cn('grid grid-cols-[1fr_3fr] content-center gap-4', className)}>
                 <div className="flex-1">
                     <AspectRatio className="flex items-center" ratio={4 / 4}>
-                        <Image className="rounded-full" src={entry.image} alt={entry.title} width={100} height={100} />
+                        <Image className="rounded-full" src={entry.image} alt={entry.title} fill />
                     </AspectRatio>
                 </div>
 
@@ -44,36 +75,7 @@ const SmallBlogPostPreview = ({ className, entry }: SmallBlogPostPreviewProps) =
                         {entry.author} <span className="themed-minor-text ml-2 font-light">{entry.date}</span>
                     </p>
                 </div>
-            </article>
-
-            {/* <article className={cn('flex gap-4', className)}>
-            <div className="flex-1">
-                <AspectRatio className="flex items-center" ratio={4 / 4}>
-                    <Image className="rounded-full" src={entry.image} alt={entry.title} width={100} height={100} />
-                </AspectRatio>
-            </div>
-
-            <div className="flex-3 max-w-[12rem]">
-                <div className="">
-                    <CategoryBadge
-                        className="mb-2
-                        w-fit group-hover:scale-100 group-hover:shadow-lg"
-                        variant={entry.category}
-                    >
-                        {entry.category}
-                    </CategoryBadge>
-
-                    <h3 className="themed-entry-subtitle !text-sm group-hover:text-gray-800 dark:text-gray-300 dark:group-hover:text-gray-100">
-                        {entry.title}
-                    </h3>
-                </div>
-
-                <p className="mt-1 flex items-center text-xs">
-                    <span className="themed-text font-normal">{entry.author}</span>
-                    <span className="themed-minor-text ml-2 font-light">{entry.date}</span>
-                </p>
-            </div>
-        </article> */}
+            </article> */}
         </Link>
     );
 };
