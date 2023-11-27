@@ -4,25 +4,10 @@ import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import { WithClassName } from '@/types/UI';
 
-import UnderlineGraphic from '@/assets/underline-1.svg';
-
 import { Button } from '@/ui/Button';
-import HeroTitle from '@/modules/UI/HeroTitle';
 
 const Featured = ({ className }: WithClassName) => (
     <section className={cn('', className)}>
-        <HeroTitle>
-            <div className="mb-3">
-                Hello, I am{' '}
-                <div className="relative inline overflow-visible">
-                    <span className="animated-gradient-text relative z-20 fill-gray-100 dark:fill-dark">George </span>
-                    <UnderlineGraphic className="animated-gradient-text absolute -bottom-6 left-0 h-12 w-full" />
-                </div>
-                ! 👋
-            </div>
-            Find out more about frontend development, creative ideas and everything in between!
-        </HeroTitle>
-
         <div className="mt-14 flex flex-col items-center gap-12 lg:flex-row">
             <div className="relative h-[25rem] w-full xl:h-[25rem] xl:max-w-[40rem] xl:flex-1">
                 <Image src="/test-blog-image.jpg" alt="Featured" fill />

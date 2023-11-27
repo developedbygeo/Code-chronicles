@@ -3,8 +3,8 @@ import { WithClassName } from '@/types/UI';
 
 import { BlogPreview } from '@/types/blogTypes';
 
-import BlogPostPreview from '@/modules/Posts/BlogPostPreview';
-import RecentPostsPagination from '@/modules/Home/RecentPostsPagination';
+import BlogPostPreview from '@/modules/PostModules/BlogPostPreview';
+import RecentPostsPagination from '@/modules/Posts/RecentPostsPagination';
 
 import mockData from '@/data/recent-posts.json';
 

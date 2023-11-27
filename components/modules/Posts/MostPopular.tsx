@@ -2,7 +2,7 @@ import { cn } from '@/lib/utils';
 import { WithClassName } from '@/types/UI';
 
 import mockData from '@/data/most-popular.json';
-import HotEntry from '@/modules/Posts/HotEntry';
+import HotEntry from '@/modules/PostModules/HotEntry';
 import { PopularEntryPreview } from '@/types/blogTypes';
 
 const MostPopular = ({ className }: WithClassName) => (

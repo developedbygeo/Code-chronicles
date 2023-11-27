@@ -1,4 +1,4 @@
-import SmallBlogPostPreview from '@/modules/Posts/SmallBlogPostPreview';
+import SmallBlogPostPreview from '@/modules/PostModules/SmallBlogPostPreview';
 
 import { WithClassName } from '@/types/UI';
 import { BlogPreview } from '@/types/blogTypes';
