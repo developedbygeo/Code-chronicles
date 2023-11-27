@@ -1,0 +1,16 @@
+{
+    "id": "1",
+    "image": "path/to/image.jpg",
+    "date": "2022-01-01",
+    "category": "Technology",
+    "title": "My First Blog Post",
+    "subtitle": "Welcome to my blog!",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ante sed nunc aliquam ultricies nec vitae tor Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ante sed nunc aliquam ultricies nec vitae torLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ante sed nunc aliquam ultricies nec vitae torLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ante sed nunc aliquam ultricies nec vitae torLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ante sed nunc aliquam ultricies nec vitae torLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ante sed nunc aliquam ultricies nec vitae torLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ante sed nunc aliquam ultricies nec vitae torLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ante sed nunc aliquam ultricies nec vitae torLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ante sed nunc aliquam ultricies nec vitae torLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ante sed nunc aliquam ultricies nec vitae torLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ante sed nunc aliquam ultricies nec vitae torLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ante sed nunc aliquam ultricies nec vitae torLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ante sed nunc aliquam ultricies nec vitae torLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ante sed nunc aliquam ultricies nec vitae torLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ante sed nunc aliquam ultricies nec vitae torLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec ante sed nunc aliquam ultricies nec vitae tors",
+    "slug": "my-first-blog-post",
+    "author": {
+        "name": "John Doe",
+        "image": "/avatar-placeholder.jpg",
+        "description": "I am a passionate writer and technology enthusiast."
+    },
+    "publishedAt": "2022-01-01T12:00:00Z"
+}
