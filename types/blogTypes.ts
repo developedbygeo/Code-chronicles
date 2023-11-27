@@ -20,3 +20,22 @@ export type PopularEntryPreview = {
     category: BlogPostCategory;
     slug: string;
 };
+
+export type Author = {
+    name: string;
+    image: string;
+    description: string;
+};
+
+export type BlogPost = {
+    id: string;
+    image: string;
+    date: string;
+    category: BlogPostCategory;
+    title: string;
+    subtitle: string;
+    text: string;
+    slug: string;
+    author: Author;
+    publishedAt: string;
+};
