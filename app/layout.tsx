@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import '@/app/globals.css';
+import '@/app/styles/globals.css';
 
 import CustomThemeProvider from '@/modules/CustomThemeProvider';
 
@@ -18,9 +18,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en" suppressHydrationWarning>
-            <body className={cn(inter.className, 'dark:bg-dark bg-gray-100')}>
+            <body className={cn(inter.className, 'bg-gray-100 dark:bg-dark')}>
                 <CustomThemeProvider>
-                    <div className="dark:bg-dark container min-h-screen">
+                    <div className="container min-h-screen dark:bg-dark">
                         <Navbar />
                         <main>{children}</main>
                         <Footer />
