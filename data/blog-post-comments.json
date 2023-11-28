@@ -1,0 +1,102 @@
+[
+    {
+        "id": "1",
+        "author": {
+            "name": "John Doe",
+            "image": "/avatar-placeholder.jpg",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        "text": "Great article!",
+        "date": "2022-01-01"
+    },
+    {
+        "id": "2",
+        "author": {
+            "name": "Jane Smith",
+            "image": "/avatar-placeholder.jpg",
+            "description": "Nulla facilisi. Sed euismod mauris id semper tincidunt."
+        },
+        "text": "I learned a lot from this.",
+        "date": "2022-01-02"
+    },
+    {
+        "id": "3",
+        "author": {
+            "name": "David Johnson",
+            "image": "/avatar-placeholder.jpg",
+            "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae."
+        },
+        "text": "Thank you for sharing!",
+        "date": "2022-01-03"
+    },
+    {
+        "id": "4",
+        "author": {
+            "name": "Emily Wilson",
+            "image": "/avatar-placeholder.jpg",
+            "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+        },
+        "text": "This is amazing!",
+        "date": "2022-01-04"
+    },
+    {
+        "id": "5",
+        "author": {
+            "name": "Michael Brown",
+            "image": "/avatar-placeholder.jpg",
+            "description": "Fusce id felis id justo lacinia lacinia."
+        },
+        "text": "Well written!",
+        "date": "2022-01-05"
+    },
+    {
+        "id": "6",
+        "author": {
+            "name": "Sarah Davis",
+            "image": "/avatar-placeholder.jpg",
+            "description": "Suspendisse potenti. Sed euismod mauris id semper tincidunt."
+        },
+        "text": "I enjoyed reading this.",
+        "date": "2022-01-06"
+    },
+    {
+        "id": "7",
+        "author": {
+            "name": "Christopher Wilson",
+            "image": "/avatar-placeholder.jpg",
+            "description": "Donec auctor, nisl a tincidunt lacinia, nunc nisl lacinia nunc, id aliquam nunc nisl id nunc."
+        },
+        "text": "Great insights!",
+        "date": "2022-01-07"
+    },
+    {
+        "id": "8",
+        "author": {
+            "name": "Olivia Johnson",
+            "image": "/avatar-placeholder.jpg",
+            "description": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae."
+        },
+        "text": "Thank you for this.",
+        "date": "2022-01-08"
+    },
+    {
+        "id": "9",
+        "author": {
+            "name": "Daniel Smith",
+            "image": "/avatar-placeholder.jpg",
+            "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+        },
+        "text": "I found this very helpful.",
+        "date": "2022-01-09"
+    },
+    {
+        "id": "10",
+        "author": {
+            "name": "Sophia Brown",
+            "image": "/avatar-placeholder.jpg",
+            "description": "Fusce id felis id justo lacinia lacinia."
+        },
+        "text": "Well done!",
+        "date": "2022-01-10"
+    }
+]
