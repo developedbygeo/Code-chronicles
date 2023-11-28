@@ -7,12 +7,12 @@ import { Textarea } from '@/ui/Textarea';
 const CommentForm = ({ className }: WithClassName) => {
     return (
         <form className={cn('', className)}>
-            <div>
+            <div className="flex flex-col gap-3">
                 <Label htmlFor="new-comment">Your Comment</Label>
                 <Textarea placeholder="Type your message here." id="message-2" />
-                <p className="text-muted-foreground text-sm">Your message will be copied to the support team.</p>
+                <p className="themed-text">Your message will be reviewed prior to being published.</p>
             </div>
-            <Button>Submit</Button>
+            <Button className="mt-4 w-fit">Submit</Button>
         </form>
     );
 };
