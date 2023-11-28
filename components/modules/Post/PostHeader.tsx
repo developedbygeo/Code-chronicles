@@ -3,22 +3,25 @@ import Image from 'next/image';
 import HeroTitle from '@/modules/UI/HeroTitle';
 
 import { WithClassName } from '@/types/UI';
-import { Author } from '@/types/blogTypes';
+import { Author, BlogPost, BlogPostCategory } from '@/types/blogTypes';
 import PostAuthor from '@/modules/Post/PostAuthor';
+import CategoryBadge from '@/elements/CategoryBadge';
 
 type PostHeaderProps = WithClassName & {
-    author: Author;
-    title: string;
-    publishedAt: string;
-    image: string;
+    post: BlogPost;
 };
 
-const PostHeader = ({ className, author, title, publishedAt }: PostHeaderProps) => (
+const PostHeader = ({ className, post }: PostHeaderProps) => (
     <article>
         <div className="flex flex-col gap-6 xl:flex-row">
             <HeroTitle className="flex flex-1 flex-col justify-between">
-                <div className="mb-3">{title}</div>
-                <PostAuthor author={author} date={publishedAt} />
+                <div className="mb-3">{post.title}</div>
+                <article className="group flex items-center gap-8">
+                    <PostAuthor author={post.author} date={post.publishedAt} />
+                    <CategoryBadge className="self-end" variant={post.category as BlogPostCategory}>
+                        {post.category}
+                    </CategoryBadge>
+                </article>
             </HeroTitle>
             <div className="relative basis-1/2">
                 <Image
