@@ -7,7 +7,7 @@ import { baseBadgeStyling } from '@/ui/Badge';
 import { HTMLAttributes } from 'react';
 import { WithClassName } from '@/types/UI';
 
-const categoryBadgeStyling = baseBadgeStyling.concat('!text-gray-600');
+const categoryBadgeStyling = baseBadgeStyling.concat('!text-gray-600 !tracking-wide');
 
 const badgeVariants = cva(categoryBadgeStyling, {
     variants: {
