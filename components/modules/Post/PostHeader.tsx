@@ -13,7 +13,7 @@ type PostHeaderProps = WithClassName & {
 
 const PostHeader = ({ className, post }: PostHeaderProps) => (
     <article>
-        <div className="flex flex-col gap-6 xl:flex-row">
+        <div className="flex flex-col-reverse gap-6 xl:flex-row">
             <HeroTitle className="flex flex-1 flex-col justify-between">
                 <div className="mb-3">{post.title}</div>
                 <article className="group flex items-center gap-8">
