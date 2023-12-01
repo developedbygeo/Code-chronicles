@@ -16,7 +16,7 @@ const PostCommentSection = ({ className }: WithClassName) => {
         <section className={cn('', className)}>
             <div className="relative w-fit">
                 <h2 className="section-title">Comments</h2>
-                <ScribbleGraphic className="animated-gradient-text absolute -right-24 -top-10 h-20 w-20" />
+                <ScribbleGraphic className="animated-gradient-text absolute -right-24 -top-10 h-20 w-20 text-dark dark:text-gray-200" />
             </div>
             {isAuth ? <CommentForm /> : <Link href="/login">Sign in to comment</Link>}
             <PostComments className="mt-12" comments={mockComments} />
