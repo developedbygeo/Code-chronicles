@@ -7,6 +7,8 @@ import CustomThemeProvider from '@/modules/CustomThemeProvider';
 import Navbar from '@/components/modules/Navbar';
 import Footer from '@/components/modules/Footer';
 import { cn } from '@/lib/utils';
+import { WithChildren } from '@/types/UI';
+import { Root } from 'postcss';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,18 +17,19 @@ export const metadata: Metadata = {
     description: 'Developedbygeo blog about coding and other things',
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-    return (
-        <html lang="en" suppressHydrationWarning>
-            <body className={cn(inter.className, 'bg-gray-100 dark:bg-dark')}>
-                <CustomThemeProvider>
+const RootLayout = ({ children }: WithChildren) => (
+    <html lang="en" suppressHydrationWarning>
+        <body className={cn(inter.className, 'bg-gray-100 dark:bg-dark')}>
+            <main>{children}</main>
+            {/* <CustomThemeProvider>
                     <div className="container min-h-screen dark:bg-dark">
                         <Navbar />
                         <main>{children}</main>
                         <Footer />
                     </div>
-                </CustomThemeProvider>
-            </body>
-        </html>
-    );
-}
+                </CustomThemeProvider> */}
+        </body>
+    </html>
+);
+
+export default RootLayout;
