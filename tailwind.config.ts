@@ -30,6 +30,8 @@ module.exports = {
                     900: '#18181b',
                 },
                 accent: '#7987FF',
+                accentVibrant: '#6978FF',
+                accentHover: '#5C6CFF',
                 dark: '#2D2D30',
             },
             textShadow: {
