@@ -29,10 +29,12 @@ module.exports = {
                     800: '#27272a',
                     900: '#18181b',
                 },
-                accent: '#7987FF',
-                accentVibrant: '#6978FF',
-                accentHover: '#5C6CFF',
-                dark: '#2D2D30',
+                accent: {
+                    default: '#7987FF',
+                    vibrant: '#6978FF',
+                    hover: '#5C6CFF',
+                    dark: '#2D2D30',
+                },
             },
             textShadow: {
                 '2xl': '1px 1px 5px rgb(33 34 43 / 20%)',
