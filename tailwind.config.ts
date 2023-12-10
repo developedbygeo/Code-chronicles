@@ -17,6 +17,7 @@ module.exports = {
                 '11/12': '91.666667%',
             },
             colors: {
+                dark: '#2D2D30',
                 gray: {
                     50: '#f9fafb',
                     100: '#f4f5f7',
@@ -33,7 +34,6 @@ module.exports = {
                     default: '#7987FF',
                     vibrant: '#6978FF',
                     hover: '#5C6CFF',
-                    dark: '#2D2D30',
                 },
             },
             textShadow: {
