@@ -7,7 +7,7 @@ import NavLink from '@/ui/NavLink';
 
 const AuthenticatedLinks = ({ className }: WithClassName) => {
     // temp
-    const isAuth = false;
+    const isAuth = true;
 
     if (!isAuth) {
         return (
@@ -22,10 +22,14 @@ const AuthenticatedLinks = ({ className }: WithClassName) => {
     return (
         <>
             <li>
-                <NavLink href="/">Post</NavLink>
+                <NavLink className="navlink" activeClassName="!text-black dark:!text-white" href="/create-new-post">
+                    Post
+                </NavLink>
             </li>
             <li>
-                <Button variant="secondary">Logout</Button>
+                <NavLink className="navlink" activeClassName="!text-black dark:!text-white" href="/logout">
+                    Logout
+                </NavLink>
             </li>
         </>
     );
