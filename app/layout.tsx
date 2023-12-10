@@ -13,13 +13,13 @@ import { Root } from 'postcss';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-    title: 'Code Chroines',
+    title: 'Code Chronicles',
     description: 'Developedbygeo blog about coding and other things',
 };
 
 const RootLayout = ({ children }: WithChildren) => (
     <html lang="en" suppressHydrationWarning>
-        <body className={cn(inter.className, 'bg-gray-100 dark:bg-dark')}>
+        <body className={cn(inter.className, 'dark:bg-dark bg-gray-100')}>
             <main>{children}</main>
             {/* <CustomThemeProvider>
                     <div className="container min-h-screen dark:bg-dark">
