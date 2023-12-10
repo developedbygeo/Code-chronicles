@@ -4,13 +4,13 @@ import { WithCategorySearchParams } from '@/types/UI';
 
 const BlogMainPage = ({ searchParams }: WithCategorySearchParams) => {
     return (
-        <section>
+        <div>
             <section className="apply-pt">
                 <HeroTitle>
                     <div className="mb-3">
                         Let&apos;s dive deep into the world of{' '}
                         <div className="relative inline overflow-visible">
-                            <span className="animated-gradient-text relative z-20 fill-gray-100 capitalize dark:fill-dark">
+                            <span className="animated-gradient-text dark:fill-dark relative z-20 fill-gray-100 capitalize">
                                 {searchParams?.category || 'frontend development'}{' '}
                             </span>
                         </div>
@@ -19,7 +19,7 @@ const BlogMainPage = ({ searchParams }: WithCategorySearchParams) => {
                 </HeroTitle>
             </section>
             <Featured />
-        </section>
+        </div>
     );
 };
 
