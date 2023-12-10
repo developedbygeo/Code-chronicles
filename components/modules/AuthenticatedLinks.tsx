@@ -1,8 +1,5 @@
-import Link from 'next/link';
-
 import { WithClassName } from '@/types/UI';
 
-import { Button } from '@/components/ui/Button';
 import NavLink from '@/ui/NavLink';
 
 const AuthenticatedLinks = ({ className }: WithClassName) => {
